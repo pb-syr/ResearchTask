@@ -13,6 +13,3 @@ This project implements a pure Python CSV data analyzer that performs statistica
 ## Installation
 No installation required - this script uses only Python's standard library.
 
-## Usage
-```bash
-python pure_python_stats.py <csv_file>
