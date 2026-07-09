@@ -1,0 +1,567 @@
+
+================================================================================
+1. DATASET STRUCTURE
+================================================================================
+
+Shape:
+  Rows: 246,745
+  Columns: 40
+
+Data Types:
+page_id                                       object
+page_name                                     object
+ad_id                                         object
+ad_creation_time                              object
+ad_delivery_start_time                        object
+ad_delivery_stop_time                         object
+bylines                                       object
+currency                                      object
+estimated_audience_size                      float64
+impressions                                  float64
+spend                                        float64
+publisher_platforms                           object
+illuminating_scored_message                   object
+illuminating_mentions                         object
+illuminating_scam                              int64
+illuminating_election_integrity_Truth          int64
+illuminating_msg_type_advocacy                 int64
+illuminating_msg_type_issue                    int64
+illuminating_msg_type_attack                   int64
+illuminating_msg_type_image                    int64
+illuminating_msg_type_cta                      int64
+illuminating_cta_subtype_engagement            int64
+illuminating_cta_subtype_fundraising           int64
+illuminating_cta_subtype_voting                int64
+illuminating_topic_covid                       int64
+illuminating_topic_economy                     int64
+illuminating_topic_education                   int64
+illuminating_topic_environment                 int64
+illuminating_topic_foreign_policy              int64
+illuminating_topic_governance                  int64
+illuminating_topic_health                      int64
+illuminating_topic_immigration                 int64
+illuminating_topic_lgbtq_issues                int64
+illuminating_topic_military                    int64
+illuminating_topic_race_and_ethnicity          int64
+illuminating_topic_safety                      int64
+illuminating_topic_social_and_cultural         int64
+illuminating_topic_technology_and_privacy      int64
+illuminating_topic_womens_issue                int64
+illuminating_incivility                        int64
+dtype: object
+
+Data Types Summary:
+  int64: 26 columns
+  object: 11 columns
+  float64: 3 columns
+
+First 5 rows:
+                   page_id  ... illuminating_incivility
+0  page_id_124974587580398  ...                       0
+1  page_id_124974587580398  ...                       0
+2  page_id_124974587580398  ...                       0
+3  page_id_106769148511724  ...                       0
+4  page_id_106769148511724  ...                       0
+
+[5 rows x 40 columns]
+
+Column names:
+  1. page_id
+  2. page_name
+  3. ad_id
+  4. ad_creation_time
+  5. ad_delivery_start_time
+  6. ad_delivery_stop_time
+  7. bylines
+  8. currency
+  9. estimated_audience_size
+  10. impressions
+  11. spend
+  12. publisher_platforms
+  13. illuminating_scored_message
+  14. illuminating_mentions
+  15. illuminating_scam
+  16. illuminating_election_integrity_Truth
+  17. illuminating_msg_type_advocacy
+  18. illuminating_msg_type_issue
+  19. illuminating_msg_type_attack
+  20. illuminating_msg_type_image
+  21. illuminating_msg_type_cta
+  22. illuminating_cta_subtype_engagement
+  23. illuminating_cta_subtype_fundraising
+  24. illuminating_cta_subtype_voting
+  25. illuminating_topic_covid
+  26. illuminating_topic_economy
+  27. illuminating_topic_education
+  28. illuminating_topic_environment
+  29. illuminating_topic_foreign_policy
+  30. illuminating_topic_governance
+  31. illuminating_topic_health
+  32. illuminating_topic_immigration
+  33. illuminating_topic_lgbtq_issues
+  34. illuminating_topic_military
+  35. illuminating_topic_race_and_ethnicity
+  36. illuminating_topic_safety
+  37. illuminating_topic_social_and_cultural
+  38. illuminating_topic_technology_and_privacy
+  39. illuminating_topic_womens_issue
+  40. illuminating_incivility
+
+================================================================================
+2. MISSING VALUES ANALYSIS
+================================================================================
+
+Columns with missing values:
+                         Missing Count  Missing Percentage
+estimated_audience_size         246745          100.000000
+spend                           246745          100.000000
+impressions                     246745          100.000000
+ad_delivery_stop_time             2159            0.874992
+bylines                           1009            0.408924
+
+Total missing values: 743,403
+Total cells: 9,869,800
+Overall missing percentage: 7.53%
+
+================================================================================
+3. NUMERIC COLUMN STATISTICS
+================================================================================
+
+📊 Column: estimated_audience_size
+  ⚠️  All values are missing
+
+📊 Column: impressions
+  ⚠️  All values are missing
+
+📊 Column: spend
+  ⚠️  All values are missing
+
+📊 Column: illuminating_scam
+  Count: 246,745
+  Mean: 0.0716
+  Median: 0.0000
+  Min: 0.0000
+  Max: 1.0000
+  Std Dev: 0.2579
+  Null Count: 0 (0.0%)
+
+📊 Column: illuminating_election_integrity_Truth
+  Count: 246,745
+  Mean: 0.0501
+  Median: 0.0000
+  Min: 0.0000
+  Max: 1.0000
+  Std Dev: 0.2181
+  Null Count: 0 (0.0%)
+
+📊 Column: illuminating_msg_type_advocacy
+  Count: 246,745
+  Mean: 0.5486
+  Median: 1.0000
+  Min: 0.0000
+  Max: 1.0000
+  Std Dev: 0.4976
+  Null Count: 0 (0.0%)
+
+📊 Column: illuminating_msg_type_issue
+  Count: 246,745
+  Mean: 0.3816
+  Median: 0.0000
+  Min: 0.0000
+  Max: 1.0000
+  Std Dev: 0.4858
+  Null Count: 0 (0.0%)
+
+📊 Column: illuminating_msg_type_attack
+  Count: 246,745
+  Mean: 0.2719
+  Median: 0.0000
+  Min: 0.0000
+  Max: 1.0000
+  Std Dev: 0.4449
+  Null Count: 0 (0.0%)
+
+📊 Column: illuminating_msg_type_image
+  Count: 246,745
+  Mean: 0.2227
+  Median: 0.0000
+  Min: 0.0000
+  Max: 1.0000
+  Std Dev: 0.4161
+  Null Count: 0 (0.0%)
+
+📊 Column: illuminating_msg_type_cta
+  Count: 246,745
+  Mean: 0.5728
+  Median: 1.0000
+  Min: 0.0000
+  Max: 1.0000
+  Std Dev: 0.4947
+  Null Count: 0 (0.0%)
+
+📊 Column: illuminating_cta_subtype_engagement
+  Count: 246,745
+  Mean: 0.1249
+  Median: 0.0000
+  Min: 0.0000
+  Max: 1.0000
+  Std Dev: 0.3306
+  Null Count: 0 (0.0%)
+
+📊 Column: illuminating_cta_subtype_fundraising
+  Count: 246,745
+  Mean: 0.2285
+  Median: 0.0000
+  Min: 0.0000
+  Max: 1.0000
+  Std Dev: 0.4199
+  Null Count: 0 (0.0%)
+
+📊 Column: illuminating_cta_subtype_voting
+  Count: 246,745
+  Mean: 0.1438
+  Median: 0.0000
+  Min: 0.0000
+  Max: 1.0000
+  Std Dev: 0.3509
+  Null Count: 0 (0.0%)
+
+📊 Column: illuminating_topic_covid
+  Count: 246,745
+  Mean: 0.0249
+  Median: 0.0000
+  Min: 0.0000
+  Max: 1.0000
+  Std Dev: 0.1557
+  Null Count: 0 (0.0%)
+
+📊 Column: illuminating_topic_economy
+  Count: 246,745
+  Mean: 0.1221
+  Median: 0.0000
+  Min: 0.0000
+  Max: 1.0000
+  Std Dev: 0.3274
+  Null Count: 0 (0.0%)
+
+📊 Column: illuminating_topic_education
+  Count: 246,745
+  Mean: 0.0143
+  Median: 0.0000
+  Min: 0.0000
+  Max: 1.0000
+  Std Dev: 0.1188
+  Null Count: 0 (0.0%)
+
+📊 Column: illuminating_topic_environment
+  Count: 246,745
+  Mean: 0.0212
+  Median: 0.0000
+  Min: 0.0000
+  Max: 1.0000
+  Std Dev: 0.1442
+  Null Count: 0 (0.0%)
+
+📊 Column: illuminating_topic_foreign_policy
+  Count: 246,745
+  Mean: 0.0053
+  Median: 0.0000
+  Min: 0.0000
+  Max: 1.0000
+  Std Dev: 0.0724
+  Null Count: 0 (0.0%)
+
+📊 Column: illuminating_topic_governance
+  Count: 246,745
+  Mean: 0.0256
+  Median: 0.0000
+  Min: 0.0000
+  Max: 1.0000
+  Std Dev: 0.1581
+  Null Count: 0 (0.0%)
+
+📊 Column: illuminating_topic_health
+  Count: 246,745
+  Mean: 0.1092
+  Median: 0.0000
+  Min: 0.0000
+  Max: 1.0000
+  Std Dev: 0.3119
+  Null Count: 0 (0.0%)
+
+📊 Column: illuminating_topic_immigration
+  Count: 246,745
+  Mean: 0.0336
+  Median: 0.0000
+  Min: 0.0000
+  Max: 1.0000
+  Std Dev: 0.1801
+  Null Count: 0 (0.0%)
+
+📊 Column: illuminating_topic_lgbtq_issues
+  Count: 246,745
+  Mean: 0.0032
+  Median: 0.0000
+  Min: 0.0000
+  Max: 1.0000
+  Std Dev: 0.0567
+  Null Count: 0 (0.0%)
+
+📊 Column: illuminating_topic_military
+  Count: 246,745
+  Mean: 0.0022
+  Median: 0.0000
+  Min: 0.0000
+  Max: 1.0000
+  Std Dev: 0.0466
+  Null Count: 0 (0.0%)
+
+📊 Column: illuminating_topic_race_and_ethnicity
+  Count: 246,745
+  Mean: 0.0124
+  Median: 0.0000
+  Min: 0.0000
+  Max: 1.0000
+  Std Dev: 0.1108
+  Null Count: 0 (0.0%)
+
+📊 Column: illuminating_topic_safety
+  Count: 246,745
+  Mean: 0.0337
+  Median: 0.0000
+  Min: 0.0000
+  Max: 1.0000
+  Std Dev: 0.1805
+  Null Count: 0 (0.0%)
+
+📊 Column: illuminating_topic_social_and_cultural
+  Count: 246,745
+  Mean: 0.1058
+  Median: 0.0000
+  Min: 0.0000
+  Max: 1.0000
+  Std Dev: 0.3076
+  Null Count: 0 (0.0%)
+
+📊 Column: illuminating_topic_technology_and_privacy
+  Count: 246,745
+  Mean: 0.0012
+  Median: 0.0000
+  Min: 0.0000
+  Max: 1.0000
+  Std Dev: 0.0340
+  Null Count: 0 (0.0%)
+
+📊 Column: illuminating_topic_womens_issue
+  Count: 246,745
+  Mean: 0.0809
+  Median: 0.0000
+  Min: 0.0000
+  Max: 1.0000
+  Std Dev: 0.2727
+  Null Count: 0 (0.0%)
+
+📊 Column: illuminating_incivility
+  Count: 246,745
+  Mean: 0.1875
+  Median: 0.0000
+  Min: 0.0000
+  Max: 1.0000
+  Std Dev: 0.3903
+  Null Count: 0 (0.0%)
+
+================================================================================
+4. CATEGORICAL COLUMN STATISTICS
+================================================================================
+
+📊 Column: page_id
+  Count: 246,745
+  Unique values: 4,475
+  Mode: 'page_id_24413227922' (frequency: 55,503)
+  Null Count: 0 (0.0%)
+  Top 5 values by frequency:
+    • page_id_24413227922: 55,503
+    • page_id_153080620724: 23,988
+    • page_id_7860876103: 14,822
+    • page_id_255594894306221: 10,461
+    • page_id_167251659804799: 9,851
+
+📊 Column: page_name
+  Count: 246,745
+  Unique values: 4,546
+  Mode: 'Kamala Harris' (frequency: 55,503)
+  Null Count: 0 (0.0%)
+  Top 5 values by frequency:
+    • Kamala Harris: 55,503
+    • Donald J. Trump: 23,988
+    • Joe Biden: 14,822
+    • The Daily Scroll: 10,461
+    • Kamala HQ: 7,564
+
+📊 Column: ad_id
+  Count: 246,745
+  Unique values: 246,745
+  Mode: '808105264f12fee56bafffa5f10d7e408b0d3d1a12ae96e07406ef785bbe5a05' (frequency: 1)
+  Null Count: 0 (0.0%)
+  Top 5 values by frequency:
+    • 808105264f12fee56bafffa5f10d7e408b0d3d1a12ae96e074...: 1
+    • 0ddb025b8544e2d58e6977ad417e742a52522b3e1fc1c9d9b6...: 1
+    • 86229868e6bde3661724fe02da93504bb4fb5da8c2550d7b7c...: 1
+    • 07b5aefc27e872e971f793e49aac38496fa62e484f3928e2b6...: 1
+    • c62978153c04116d88ead49379916855f2cb58bf788631f26f...: 1
+
+📊 Column: ad_creation_time
+  Count: 246,745
+  Unique values: 547
+  Mode: '2024-10-27' (frequency: 8,619)
+  Null Count: 0 (0.0%)
+  Top 5 values by frequency:
+    • 2024-10-27: 8,619
+    • 2024-10-28: 7,356
+    • 2024-10-26: 6,414
+    • 2024-10-23: 5,021
+    • 2024-10-25: 4,769
+
+📊 Column: ad_delivery_start_time
+  Count: 246,745
+  Unique values: 558
+  Mode: '2024-10-28' (frequency: 10,089)
+  Null Count: 0 (0.0%)
+  Top 5 values by frequency:
+    • 2024-10-28: 10,089
+    • 2024-10-27: 7,290
+    • 2024-10-26: 6,793
+    • 2024-10-25: 5,311
+    • 2024-10-23: 4,598
+
+📊 Column: ad_delivery_stop_time
+  Count: 244,586
+  Unique values: 433
+  Mode: '2024-11-05' (frequency: 14,222)
+  Null Count: 2,159 (0.9%)
+  Top 5 values by frequency:
+    • 2024-11-05: 14,222
+    • 2024-10-27: 5,169
+    • 2024-10-26: 4,282
+    • 2024-10-29: 3,793
+    • 2024-10-28: 3,447
+
+📊 Column: bylines
+  Count: 245,736
+  Unique values: 3,790
+  Mode: 'HARRIS FOR PRESIDENT' (frequency: 49,788)
+  Null Count: 1,009 (0.4%)
+  Top 5 values by frequency:
+    • HARRIS FOR PRESIDENT: 49,788
+    • HARRIS VICTORY FUND: 32,612
+    • BIDEN VICTORY FUND: 15,539
+    • DONALD J. TRUMP FOR PRESIDENT 2024, INC.: 15,112
+    • Trump National Committee JFC: 7,279
+
+📊 Column: currency
+  Count: 246,745
+  Unique values: 18
+  Mode: 'USD' (frequency: 246,599)
+  Null Count: 0 (0.0%)
+  Top 5 values by frequency:
+    • USD: 246,599
+    • INR: 63
+    • GBP: 17
+    • EUR: 11
+    • EGP: 8
+
+📊 Column: publisher_platforms
+  Count: 246,745
+  Unique values: 9
+  Mode: '['facebook', 'instagram']' (frequency: 214,434)
+  Null Count: 0 (0.0%)
+  Top 5 values by frequency:
+    • ['facebook', 'instagram']: 214,434
+    • ['facebook']: 23,259
+    • ['instagram']: 8,395
+    • ['facebook', 'instagram', 'audience_network', 'mes...: 459
+    • ['facebook', 'instagram', 'audience_network']: 79
+
+📊 Column: illuminating_scored_message
+  Count: 246,745
+  Unique values: 37,338
+  Mode: '9b2d5b4678781e53038e91ea5324530a03f27dc1d0e5f6c9bc9d493a23be9de0' (frequency: 3,046)
+  Null Count: 0 (0.0%)
+  Top 5 values by frequency:
+    • 9b2d5b4678781e53038e91ea5324530a03f27dc1d0e5f6c9bc...: 3,046
+    • 9B2D5B4678781E53038E91EA5324530A03F27DC1D0E5F6C9BC...: 2,926
+    • 82459467ad44f717f2089911f5210cce1ff025dc0cee03bdb2...: 947
+    • 82459467AD44F717F2089911F5210CCE1FF025DC0CEE03BDB2...: 940
+    • 3b1d236346df93fd259a23d523f6deeed9b9939158b6f34b11...: 683
+
+📊 Column: illuminating_mentions
+  Count: 246,745
+  Unique values: 278
+  Mode: '[]' (frequency: 73,205)
+  Null Count: 0 (0.0%)
+  Top 5 values by frequency:
+    • []: 73,205
+    • ['Donald Trump']: 53,182
+    • ['Kamala Harris']: 31,019
+    • ['President Trump']: 14,580
+    • ['Joe Biden']: 14,059
+
+================================================================================
+5. SUMMARY STATISTICS (DESCRIBE)
+================================================================================
+
+Numeric columns summary:
+       estimated_audience_size  ...  illuminating_incivility
+count                      0.0  ...            246745.000000
+mean                       NaN  ...                 0.187526
+std                        NaN  ...                 0.390334
+min                        NaN  ...                 0.000000
+25%                        NaN  ...                 0.000000
+50%                        NaN  ...                 0.000000
+75%                        NaN  ...                 0.000000
+max                        NaN  ...                 1.000000
+
+[8 rows x 29 columns]
+
+Categorical columns summary:
+                    page_id  ... illuminating_mentions
+count                246745  ...                246745
+unique                 4475  ...                   278
+top     page_id_24413227922  ...                    []
+freq                  55503  ...                 73205
+
+[4 rows x 11 columns]
+
+================================================================================
+6. COMPLEX COLUMN ANALYSIS
+================================================================================
+
+📊 Column: publisher_platforms
+  Sample values (first 10):
+    • ['facebook', 'instagram']
+    • ['facebook', 'instagram']
+    • ['facebook', 'instagram']
+    • ['facebook', 'instagram', 'audience_network', 'messenger']
+    • ['facebook', 'instagram', 'audience_network', 'messenger']
+    • ['facebook', 'instagram', 'audience_network']
+    • ['facebook', 'instagram', 'audience_network']
+    • ['facebook', 'instagram', 'audience_network', 'messenger']
+    • ['facebook', 'instagram']
+    • ['instagram']
+  Column appears to contain list data
+  Null count: 0 (0.0%)
+
+📊 Column: illuminating_mentions
+  Sample values (first 10):
+    • ['Kamala Harris', 'Tim Walz']
+    • ['Kamala Harris', 'Tim Walz']
+    • ['Kamala Harris', 'Tim Walz']
+    • ['Tim Walz']
+    • ['Tim Walz']
+    • ['Tim Walz']
+    • ['Tim Walz']
+    • ['Tim Walz']
+    • ['Kamala Harris', 'Tim Walz']
+    • ['Kamala Harris', 'Tim Walz']
+  Column appears to contain list data
+  Null count: 0 (0.0%)
