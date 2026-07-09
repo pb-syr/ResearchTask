@@ -383,5 +383,4 @@ The findings highlight the importance of understanding the structure of politica
 
 ---
 
-*Analysis conducted using both pure Python and Pandas implementations to ensure accuracy and reproducibility.*
 
